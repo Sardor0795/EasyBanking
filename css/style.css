@@ -8,6 +8,7 @@
   --white: #ffffff;
   --hero-bg: #fafafa;
   --shoose-bg: #f4f5f7;
+  --article-bg: #f2f2f2;
 }
 
 /* FONTS */
@@ -300,7 +301,7 @@ button {
 
 .shoose {
   background-color: var(--shoose-bg);
-  padding: 95px 0;
+  padding: 98px 0;
 }
 
 .shoose__content {
@@ -357,6 +358,81 @@ button {
 
 .ml-10 {
   margin-left: 10px;
+}
+
+/* ARTICLE */
+
+.article {
+  background-color: var(--hero-bg);
+  padding: 80px 0;
+}
+
+.article__title {
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.714286px;
+  color: var(--black);
+  margin-top: 0;
+  margin-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.article__cards .cards__card {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.article__cards .cards__img {
+  width: 100%;
+}
+
+.article__cards .cards__content {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: var(--white);
+}
+
+.article__cards .cards__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.article__cards .cards__link {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.285714px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--black);
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.article__cards .cards__link:hover {
+  color: var(--green);
+}
+
+.article__cards .cards__link:active {
+  opacity: 0.6;
+}
+
+.article__cards .cards__author {
+  order: -1;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: -0.15625px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.article__cards .cards__text {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.203125px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* RETINA BG */
