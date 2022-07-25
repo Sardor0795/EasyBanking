@@ -535,6 +535,7 @@ button {
 
 .site-footer__copy {
   font-size: 15px;
+  white-space: nowrap;
   line-height: 26px;
   text-align: right;
   letter-spacing: -0.234375px;
