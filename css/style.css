@@ -7,6 +7,35 @@
   --gray: #9597a5;
 }
 
+/* FONTS */
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../fonts/PublicSans-Medium.woff2') format('woff2'),
+      url('../fonts/PublicSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../fonts/PublicSans-Regular.woff2') format('woff2'),
+      url('../fonts/PublicSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../fonts/PublicSans-Thin.woff2') format('woff2'),
+      url('../fonts/PublicSans-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* GLOBAL */
 
 html {
