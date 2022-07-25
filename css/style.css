@@ -293,7 +293,7 @@ button {
   height: 960px;
   object-fit: contain;
   top: -132px;
-  right: -190px;
+  left: calc(50% + 73px);
 }
 
 /* SHOOSE SECTION */
