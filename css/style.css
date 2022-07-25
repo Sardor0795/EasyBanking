@@ -210,6 +210,7 @@ button {
 .cards__card {
   max-width: 255px;
   margin-left: 30px;
+  margin-bottom: 50px;
 }
 
 /* ELEMENT HIDER */
@@ -302,7 +303,8 @@ button {
 
 .shoose {
   background-color: var(--shoose-bg);
-  padding: 98px 0;
+  padding-top: 98px;
+  padding-bottom: 58px;
 }
 
 .shoose__content {
@@ -365,7 +367,8 @@ button {
 
 .article {
   background-color: var(--hero-bg);
-  padding: 77px 0;
+  padding-top: 77px;
+  padding-bottom: 27px;
 }
 
 .article__title {
