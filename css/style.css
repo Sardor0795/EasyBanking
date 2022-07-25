@@ -245,7 +245,7 @@ button {
 .hero {
   padding: 170px 0;
   position: relative;
-  z-index: -1;
+  z-index: 10;
   background-color: var(--hero-bg);
   background-image: url("../img/hero-bg-desktop.svg");
   background-repeat: no-repeat;
