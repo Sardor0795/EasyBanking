@@ -167,7 +167,7 @@ button {
   height: 4px;
   position: absolute;
   left: 0;
-  bottom: -28px;
+  bottom: -32px;
   display: none;
   background-color: var(--green);
 }
