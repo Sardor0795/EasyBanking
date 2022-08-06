@@ -250,6 +250,22 @@ button {
   margin-left: auto;
 }
 
+/* BODY SCROLL */
+
+body::-webkit-scrollbar {
+  width: 10px; /* Mostly for vertical scrollbars */
+}
+
+body::-webkit-scrollbar-thumb {
+  /* Foreground */
+  background: #035c3bb4;
+}
+
+body::-webkit-scrollbar-track {
+  /* Background */
+  background: var(--gray);
+}
+
 /* MAIN CONTENT */
 
 .main-content {
@@ -542,22 +558,6 @@ button {
   opacity: 0.5;
   margin-top: 0;
   margin-bottom: 0;
-}
-
-/* BODY SCROLL */
-
-body::-webkit-scrollbar {
-  width: 10px; /* Mostly for vertical scrollbars */
-}
-
-body::-webkit-scrollbar-thumb {
-  /* Foreground */
-  background: var(--green);
-}
-
-body::-webkit-scrollbar-track {
-  /* Background */
-  background: var(--black);
 }
 
 /* RETINA BG */
