@@ -241,10 +241,6 @@ button {
   justify-content: center;
 }
 
-.site-header__logo {
-  margin-right: 24px;
-}
-
 .site-header__nav {
   margin-right: auto;
   margin-left: auto;
@@ -625,4 +621,12 @@ body::-webkit-scrollbar-track {
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
+}
+
+/* Media */
+
+@media (max-width: 800px) {
+  .nav__item {
+    margin: 0 10px;
+  }
 }
