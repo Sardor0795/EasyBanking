@@ -815,10 +815,7 @@ body::-webkit-scrollbar-track {
     justify-content: space-between;
   }
   .site-footer__copy {
-    line-height: 0;
-  }
-  .site-footer__btn-wrapper .btn {
-    margin-bottom: 35px;
+    line-height: 15px;
   }
 }
 
