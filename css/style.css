@@ -867,7 +867,7 @@ body::-webkit-scrollbar-track {
 
 @media (max-width: 360px) {
   .hero__img {
-    top: -255px;
+    top: -256px;
   }
 }
 
