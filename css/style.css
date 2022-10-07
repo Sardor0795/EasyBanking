@@ -282,6 +282,7 @@ body::-webkit-scrollbar-track {
   background-image: url("../img/hero-bg-desktop.svg");
   background-repeat: no-repeat;
   background-position: left calc(50% + 597px) top -261px;
+  overflow: hidden;
 }
 
 .hero__content {
@@ -629,9 +630,51 @@ body::-webkit-scrollbar-track {
 
 /* Media */
 
+@media (max-width: 900px) {
+  .hero {
+    background-position: left calc(50% + 650px) top -261px;
+  }
+}
+
 @media (max-width: 800px) {
   .nav__item {
     margin: 0 10px;
+  }
+  .hero__text {
+    max-width: 415px;
+  }
+  .hero__img {
+    width: 635px;
+    height: 840px;
+    top: -118px;
+    left: calc(50% + 12px);
+  }
+}
+
+@media (max-width: 780px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 760px;
+    padding: 0;
+    background-position: left calc(100% + 515px) top -574px;
+  }
+  .hero__content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero__text {
+    max-width: 100%;
+  }
+  .hero__img {
+    width: 100%;
+    height: 711px;
+    top: -225px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
 }
 
