@@ -634,6 +634,30 @@ body::-webkit-scrollbar-track {
 
 /* Media */
 
+@media (max-width: 1150px) {
+  .cards__card {
+    max-width: calc(100% / 2 - 30px);
+  }
+  .cards__card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .shoose__content {
+    text-align: center;
+  }
+  .shoose__text {
+    max-width: 635px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .shoose {
+    padding-top: 88px;
+    padding-bottom: 50px;
+  }
+}
+
 @media (max-width: 900px) {
   .hero {
     background-position: left calc(50% + 650px) top -261px;
