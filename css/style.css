@@ -814,6 +814,12 @@ body::-webkit-scrollbar-track {
     align-items: center;
     justify-content: space-between;
   }
+  .site-footer__copy {
+    line-height: 0;
+  }
+  .site-footer__btn-wrapper .btn {
+    margin-bottom: 35px;
+  }
 }
 
 @media (max-width: 570px) {
