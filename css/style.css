@@ -632,6 +632,9 @@ body::-webkit-scrollbar-track {
 }
 
 @media (max-width: 690px) {
+  .site-header__btn{
+    display: none;
+  }
   .site-header__logo {
     margin-right: auto;
   }
