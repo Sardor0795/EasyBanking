@@ -799,6 +799,10 @@ body::-webkit-scrollbar-track {
 @media (max-width: 500px) {
   .hero {
     background-position: left calc(100% + 724px) top -574px;
+    min-height: 837px;
+  }
+  .hero__img {
+    top: -238px;
   }
 }
 
@@ -807,7 +811,7 @@ body::-webkit-scrollbar-track {
     font-size: 40px;
   }
   .hero {
-    min-height: 770px;
+    min-height: 749px;
     padding-bottom: 55px;
   }
   .shoose__title {
@@ -822,6 +826,9 @@ body::-webkit-scrollbar-track {
   .shoose__cards .cards__title {
     margin-bottom: 20px;
   }
+  .hero__img {
+    top: -259px;
+  }
 }
 
 @media (max-width: 405px) {
@@ -834,7 +841,7 @@ body::-webkit-scrollbar-track {
 @media (max-width: 400px) {
   .hero {
     background-position: left calc(100% + 724px) top -625px;
-    min-height: 740px;
+    min-height: 737px;
   }
   .hero__title {
     line-height: 56px;
@@ -844,11 +851,17 @@ body::-webkit-scrollbar-track {
     font-size: 16px;
     margin-bottom: 30px;
   }
+  .hero__img {
+    top: -262px;
+  }
 }
 
 @media (max-width: 320px) {
   .hero {
-    min-height: 740px;
+    min-height: 722px;
+  }
+  .hero__img {
+    top: -280px;
   }
   .shoose__content {
     margin-bottom: 50px;
