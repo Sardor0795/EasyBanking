@@ -1,3 +1,5 @@
+// Loader
+
 const elLoader = document.querySelector(".lodaer-wrapper");
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -5,3 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
     elLoader.classList.add("close");
   }, 1500);
 });
+
+// Toggler
+
+const elTogglerOpen = document.querySelector(".toggler--open");
+const elTogglerClose = document.querySelector(".toggler--close");
+
+elTogglerOpen.onclick = () => {
+  elTogglerOpen.classList.remove("open");
+  elTogglerOpen.classList.add("close");
+  elTogglerClose.classList.add("open");
+  elTogglerClose.classList.remove("close");
+};
+
+elTogglerClose.onclick = () => {
+  elTogglerClose.classList.remove("open");
+  elTogglerClose.classList.add("close");
+  elTogglerOpen.classList.remove("close");
+  elTogglerOpen.classList.add("open");
+};
