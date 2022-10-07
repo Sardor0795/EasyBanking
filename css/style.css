@@ -879,11 +879,17 @@ body::-webkit-scrollbar-track {
   .hero__img {
     top: -256px;
   }
+  .article__cards .cards__link {
+    width: 85%;
+  }
 }
 
 @media (max-width: 340px) {
   .hero__img {
     top: -270px;
+  }
+  .article__cards .cards__link {
+    width: unset;
   }
 }
 
