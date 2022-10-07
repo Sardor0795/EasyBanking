@@ -46,6 +46,7 @@ html {
   box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
+  padding-top: 55px;
 }
 
 *,
@@ -230,9 +231,12 @@ button {
 
 .site-header {
   padding: 18px 0;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
   z-index: 50;
   background-color: var(--white);
+  z-index: 999;
 }
 
 .site-header__container {
