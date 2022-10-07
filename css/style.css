@@ -865,6 +865,12 @@ body::-webkit-scrollbar-track {
   }
 }
 
+@media (max-width: 360px) {
+  .hero__img {
+    top: -255px;
+  }
+}
+
 @media (max-width: 340px) {
   .hero__img {
     top: -270px;
