@@ -661,8 +661,8 @@ body::-webkit-scrollbar-track {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    min-height: 760px;
-    padding: 0;
+    min-height: 850px;
+    padding-bottom: 65px;
     background-position: left calc(100% + 515px) top -574px;
   }
   .hero__content {
@@ -742,6 +742,10 @@ body::-webkit-scrollbar-track {
   .nav__link:hover::after {
     display: none;
   }
+  .hero {
+    min-height: 838px;
+    padding-bottom: 65px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -755,14 +759,15 @@ body::-webkit-scrollbar-track {
     font-size: 40px;
   }
   .hero {
-    min-height: 690px;
+    min-height: 770px;
+    padding-bottom: 55px;
   }
 }
 
 @media (max-width: 400px) {
   .hero {
     background-position: left calc(100% + 724px) top -625px;
-    min-height: 680px;
+    min-height: 740px;
   }
   .hero__title {
     line-height: 56px;
@@ -776,6 +781,6 @@ body::-webkit-scrollbar-track {
 
 @media (max-width: 320px) {
   .hero {
-    min-height: 675px;
+    min-height: 740px;
   }
 }
