@@ -656,6 +656,9 @@ body::-webkit-scrollbar-track {
     padding-top: 88px;
     padding-bottom: 50px;
   }
+  .article__title {
+    text-align: center;
+  }
 }
 
 @media (max-width: 900px) {
@@ -707,6 +710,9 @@ body::-webkit-scrollbar-track {
   .shoose {
     padding-top: 60px;
     padding-bottom: 40px;
+  }
+  .article {
+    padding-top: 60px;
   }
 }
 
@@ -796,6 +802,10 @@ body::-webkit-scrollbar-track {
   .cards__card {
     max-width: 100%;
     margin-left: 0;
+  }
+  .article {
+    padding-top: 50px;
+    padding-bottom: 0;
   }
 }
 
@@ -898,5 +908,9 @@ body::-webkit-scrollbar-track {
   }
   .shoose {
     padding-bottom: 15px;
+  }
+  .article__title {
+    font-size: 35px;
+    line-height: 40px;
   }
 }
