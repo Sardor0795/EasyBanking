@@ -582,10 +582,12 @@ body::-webkit-scrollbar-track {
   align-items: center;
   justify-content: center;
   z-index: 999;
+  transition: opacity 0.5s ease;
 }
 
 .loader-wrapper.close {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .lds-facebook {
@@ -734,11 +736,11 @@ body::-webkit-scrollbar-track {
     display: flex;
   }
 
-  .open {
+  .togglerOpen {
     display: flex;
   }
 
-  .close {
+  .togglerClose {
     display: none;
   }
 
@@ -765,7 +767,7 @@ body::-webkit-scrollbar-track {
     transition: all 0.5s ease;
     display: none;
   }
-  .nav.open {
+  .nav.togglerOpen {
     display: block;
   }
   .nav__list {

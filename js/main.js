@@ -16,28 +16,28 @@ const elNav = document.querySelector(".nav");
 const elNavCloserWindow = document.querySelector(".nav__closer-window");
 
 elTogglerOpen.onclick = () => {
-  elTogglerOpen.classList.remove("open");
-  elTogglerOpen.classList.add("close");
-  elTogglerClose.classList.add("open");
-  elTogglerClose.classList.remove("close");
-  elNav.classList.add("open");
+  elTogglerOpen.classList.remove("togglerOpen");
+  elTogglerOpen.classList.add("togglerClose");
+  elTogglerClose.classList.add("togglerOpen");
+  elTogglerClose.classList.remove("togglerClose");
+  elNav.classList.add("togglerOpen");
   document.body.style = "overflow: hidden;";
 };
 
 elTogglerClose.onclick = () => {
-  elTogglerClose.classList.remove("open");
-  elTogglerClose.classList.add("close");
-  elTogglerOpen.classList.remove("close");
-  elTogglerOpen.classList.add("open");
-  elNav.classList.remove("open");
+  elTogglerClose.classList.remove("togglerOpen");
+  elTogglerClose.classList.add("togglerClose");
+  elTogglerOpen.classList.remove("togglerClose");
+  elTogglerOpen.classList.add("togglerOpen");
+  elNav.classList.remove("togglerOpen");
   document.body.removeAttribute("style");
 };
 
 elNavCloserWindow.onclick = () => {
-  elTogglerClose.classList.remove("open");
-  elTogglerClose.classList.add("close");
-  elTogglerOpen.classList.remove("close");
-  elTogglerOpen.classList.add("open");
-  elNav.classList.remove("open");
+  elTogglerClose.classList.remove("togglerOpen");
+  elTogglerClose.classList.add("togglerClose");
+  elTogglerOpen.classList.remove("togglerClose");
+  elTogglerOpen.classList.add("togglerOpen");
+  elNav.classList.remove("togglerOpen");
   document.body.removeAttribute("style");
 };
