@@ -14,6 +14,7 @@ const elTogglerOpen = document.querySelector(".toggler--open");
 const elTogglerClose = document.querySelector(".toggler--close");
 const elNav = document.querySelector(".nav");
 const elNavCloserWindow = document.querySelector(".nav__closer-window");
+const elHeaderLogo = document.querySelector(".site-header__logo");
 
 elTogglerOpen.onclick = () => {
   elTogglerOpen.classList.remove("togglerOpen");
@@ -34,6 +35,15 @@ elTogglerClose.onclick = () => {
 };
 
 elNavCloserWindow.onclick = () => {
+  elTogglerClose.classList.remove("togglerOpen");
+  elTogglerClose.classList.add("togglerClose");
+  elTogglerOpen.classList.remove("togglerClose");
+  elTogglerOpen.classList.add("togglerOpen");
+  elNav.classList.remove("togglerOpen");
+  document.body.removeAttribute("style");
+};
+
+elHeaderLogo.onclick = () => {
   elTogglerClose.classList.remove("togglerOpen");
   elTogglerClose.classList.add("togglerClose");
   elTogglerOpen.classList.remove("togglerClose");
