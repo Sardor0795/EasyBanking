@@ -21,6 +21,7 @@ elTogglerOpen.onclick = () => {
   elTogglerClose.classList.add("open");
   elTogglerClose.classList.remove("close");
   elNav.classList.add("open");
+  document.body.style = "overflow: hidden;";
 };
 
 elTogglerClose.onclick = () => {
@@ -29,6 +30,7 @@ elTogglerClose.onclick = () => {
   elTogglerOpen.classList.remove("close");
   elTogglerOpen.classList.add("open");
   elNav.classList.remove("open");
+  document.body.removeAttribute("style");
 };
 
 elNavCloserWindow.onclick = () => {
@@ -37,4 +39,5 @@ elNavCloserWindow.onclick = () => {
   elTogglerOpen.classList.remove("close");
   elTogglerOpen.classList.add("open");
   elNav.classList.remove("open");
+  document.body.removeAttribute("style");
 };
