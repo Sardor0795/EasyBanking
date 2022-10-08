@@ -1,6 +1,6 @@
 // Loader
 
-const elLoader = document.querySelector(".lodaer-wrapper");
+const elLoader = document.querySelector(".loader-wrapper");
 
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {

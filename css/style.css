@@ -571,7 +571,7 @@ body::-webkit-scrollbar-track {
 
 /* Favicon */
 
-.lodaer-wrapper {
+.loader-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -584,7 +584,7 @@ body::-webkit-scrollbar-track {
   z-index: 999;
 }
 
-.lodaer-wrapper.close {
+.loader-wrapper.close {
   display: none;
 }
 
