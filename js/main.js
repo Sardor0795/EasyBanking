@@ -15,6 +15,7 @@ const elTogglerClose = document.querySelector(".toggler--close");
 const elNav = document.querySelector(".nav");
 const elNavCloserWindow = document.querySelector(".nav__closer-window");
 const elHeaderLogo = document.querySelector(".site-header__logo");
+const elsNavLink = document.querySelectorAll(".nav__link");
 
 const navClose = () => {
   elTogglerClose.classList.remove("togglerOpen");
@@ -25,13 +26,17 @@ const navClose = () => {
   document.body.removeAttribute("style");
 };
 
-elTogglerOpen.onclick = () => {
+const navOpen = () => {
   elTogglerOpen.classList.remove("togglerOpen");
   elTogglerOpen.classList.add("togglerClose");
   elTogglerClose.classList.add("togglerOpen");
   elTogglerClose.classList.remove("togglerClose");
   elNav.classList.add("togglerOpen");
   document.body.style = "overflow: hidden;";
+};
+
+elTogglerOpen.onclick = () => {
+  navOpen();
 };
 
 elTogglerClose.onclick = () => {
@@ -45,3 +50,7 @@ elNavCloserWindow.onclick = () => {
 elHeaderLogo.onclick = () => {
   navClose();
 };
+
+elsNavLink.forEach((el) => {
+  el.onclick = () => navClose();
+});
