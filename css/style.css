@@ -780,6 +780,9 @@ body::-webkit-scrollbar-track {
   .nav__item {
     margin-bottom: 25px;
   }
+  .nav__item:last-child {
+    margin-bottom: 0;
+  }
   .nav__link:hover {
     color: var(--green);
   }
