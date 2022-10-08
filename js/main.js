@@ -16,6 +16,15 @@ const elNav = document.querySelector(".nav");
 const elNavCloserWindow = document.querySelector(".nav__closer-window");
 const elHeaderLogo = document.querySelector(".site-header__logo");
 
+const navClose = () => {
+  elTogglerClose.classList.remove("togglerOpen");
+  elTogglerClose.classList.add("togglerClose");
+  elTogglerOpen.classList.remove("togglerClose");
+  elTogglerOpen.classList.add("togglerOpen");
+  elNav.classList.remove("togglerOpen");
+  document.body.removeAttribute("style");
+};
+
 elTogglerOpen.onclick = () => {
   elTogglerOpen.classList.remove("togglerOpen");
   elTogglerOpen.classList.add("togglerClose");
@@ -26,28 +35,13 @@ elTogglerOpen.onclick = () => {
 };
 
 elTogglerClose.onclick = () => {
-  elTogglerClose.classList.remove("togglerOpen");
-  elTogglerClose.classList.add("togglerClose");
-  elTogglerOpen.classList.remove("togglerClose");
-  elTogglerOpen.classList.add("togglerOpen");
-  elNav.classList.remove("togglerOpen");
-  document.body.removeAttribute("style");
+  navClose();
 };
 
 elNavCloserWindow.onclick = () => {
-  elTogglerClose.classList.remove("togglerOpen");
-  elTogglerClose.classList.add("togglerClose");
-  elTogglerOpen.classList.remove("togglerClose");
-  elTogglerOpen.classList.add("togglerOpen");
-  elNav.classList.remove("togglerOpen");
-  document.body.removeAttribute("style");
+  navClose();
 };
 
 elHeaderLogo.onclick = () => {
-  elTogglerClose.classList.remove("togglerOpen");
-  elTogglerClose.classList.add("togglerClose");
-  elTogglerOpen.classList.remove("togglerClose");
-  elTogglerOpen.classList.add("togglerOpen");
-  elNav.classList.remove("togglerOpen");
-  document.body.removeAttribute("style");
+  navClose();
 };
